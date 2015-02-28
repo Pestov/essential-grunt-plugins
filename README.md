@@ -3,7 +3,7 @@
 
 [grunt-browser-sync](https://github.com/BrowserSync/grunt-browser-sync) - keep multiple browsers & devices in sync when building websites.
 
-[grunt-html-build](https://github.com/spatools/grunt-html-build) - appends scripts and styles, Removes debug parts, append html partials.
+[grunt-html-build](https://github.com/spatools/grunt-html-build) and [grunt-include-replace](https://github.com/alanshaw/grunt-include-replace) - appends scripts and styles, removes debug parts, append html partials.
 
 [grunt-email-design](https://github.com/leemunroe/grunt-email-design) - a workflow for designing and testing HTML email templates.
 
@@ -11,7 +11,27 @@
 
 [grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) - compress CSS files.
 
-[grunt-revizor](https://github.com/atrolov/grunt-revizor) -  compress CSS classes and identifiers.
+[grunt-revizor](https://github.com/atrolov/grunt-revizor) - compress CSS classes and identifiers. In addition, there many CSS optimizers and [benchmark tests](http://goalsmashers.github.io/css-minification-benchmark/) ([GitHub](https://github.com/GoalSmashers/css-minification-benchmark) for them. But recently I saw most powerful [Shorthand](https://github.com/frankmarineau/shorthand) utility without Grunt, which does folowing:
+```
+a {
+	font-family: Arial;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 18px; 
+	font-weight: bold;
+    background-image: url('example.png');
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+=>
+
+a {
+  font: italic bold 14px/18px Arial;
+  background: red url('example.png') no-repeat / cover;
+}
+```
 
 [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) - neat HTML minificator. 
 
@@ -28,21 +48,27 @@
 #JavaScript
 [grunt-autopolyfiller](https://github.com/azproduction/grunt-autopolyfiller/) - precise polyfills. This is like Autoprefixer, but for JavaScript polyfills. 
 
+[grunt-babel](https://github.com/babel/babel) - transpiler for writing next generation JavaScript.
+
 [grunt-jsfmt](https://github.com/james2doyle/grunt-jsfmt) - for formatting, searching, and rewriting JavaScript.
 
 [grunt-jscs](https://github.com/jscs-dev/grunt-jscs) - for checking JavaScript Code Style.
 
 [grunt-modernizr](https://github.com/Modernizr/grunt-modernizr) - build out a lean, mean Modernizr machine.
 
+[grunt-express](https://github.com/blai/grunt-express) - start (and supervise) an Express.js web server using, works well with socket.io
+
 [grunt-contrib-requirejs](https://github.com/gruntjs/grunt-contrib-requirejs) and [grunt-browserify](https://github.com/jmreidy/grunt-browserify) - optimize the work with RequireJS and Browserify respectively.
 
-[grunt-wiredep](https://github.com/stephenplusplus/grunt-wiredep) - inject Bower packages.
+[grunt-shipit](https://github.com/shipitjs/grunt-shipit) - [Shipit](https://github.com/shipitjs/shipit) automation and deployment tool.
 
 [grunt-plato](https://github.com/jsoverson/grunt-plato) - generate static analysis reports.
 
 [grunt-complexity](https://github.com/vigetlabs/grunt-complexity) - evaluates code maintainability using Halstead and Cyclomatic metrics.
 
 [fixmyjs](https://github.com/jonschlinkert/grunt-fixmyjs) - automatically fix silly lint errors with help of [JSHint](http://jshint.com/) ([grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)).
+
+[grunt-jscpd](https://github.com/kucherenko/jscpd) - copy/paste detector for programming source code.
 
 [grunt-jsonlint](https://github.com/brandonramirez/grunt-jsonlint) and [grunt-yamllint](https://github.com/geedew/grunt-yamllint) - JSON and YAML validators.
 
@@ -98,13 +124,25 @@
 
 [grunt-remove-logging](https://github.com/ehynds/grunt-remove-logging) - remove console logging statements.
 
+[grunt-proxy](https://github.com/tutukin/grunt-proxy) and [grunt-connect-proxy](https://github.com/drewzboto/grunt-connect-proxy) - connect support for proxying API calls during development.
+
 [node-matchdep](https://github.com/tkellen/node-matchdep) -  filter npm module dependencies.
 
 [grunt-phantomas](https://github.com/stefanjudis/grunt-phantomas) - measure frontend performance. 
 
 [grunt-preprocess](https://github.com/jsoverson/grunt-preprocess) - preprocess files based off environment configuration. 
 
+[time-grunt](https://github.com/sindresorhus/time-grunt) - displays the elapsed execution time of grunt tasks.
+
 [grunt-rev](https://github.com/cbas/grunt-rev) - useful plugin to work with versions.
+
+[grunt-wiredep](https://github.com/stephenplusplus/grunt-wiredep) - inject Bower packages.
+
+[grunt-dev-update](https://github.com/pgilad/grunt-dev-update) - automate the updating of your package.json packages.
+
+[load-grunt-config](https://github.com/firstandthird/load-grunt-config) - Grunt library that allows you to break up your Gruntfile config by task.
+
+[grunt-newer](https://github.com/tschaub/grunt-newer) - run Grunt tasks with only those source files modified since the last successful run.
 
 [grunt-open](https://github.com/jsoverson/grunt-open) - open URLs and files. 
 
@@ -121,7 +159,7 @@
 
 #Compilers
 * [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less) - LESS in CSS.
-* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) - SASS/SCSS in СSS.
+* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) and [grunt-sass](https://github.com/sindresorhus/grunt-sass) - SASS/SCSS in СSS.
 * [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass) - SASS with Compass in CSS.
 * [grunt-contrib-stylus](https://github.com/gruntjs/grunt-contrib-stylus) - Stylus in CSS.
 * [grunt-contrib-coffee](https://github.com/gruntjs/grunt-contrib-coffee) - CoffeeScript in JavaScript.
