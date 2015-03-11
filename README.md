@@ -78,7 +78,7 @@ a {
 
 ###Unit Tests
 * [grunt-contrib-nodeunit](https://github.com/gruntjs/grunt-contrib-nodeunit)
-* [grunt-contrib-jasmine](https://www.npmjs.com/package/grunt-contrib)
+* [grunt-contrib-jasmine](https://github.com/gruntjs/grunt-contrib-jasminen)
 * [grunt-contrib-qunit](https://github.com/gruntjs/grunt-contrib-qunit)
 * [grunt-mocha](https://github.com/kmiyashiro/grunt-mocha)
 * [grunt-karma](https://github.com/karma-runner/grunt-karma) 
@@ -120,25 +120,23 @@ a {
 
 [grunt-jsdoc](https://github.com/krampstudio/grunt-jsdoc) - generate JavaScript documentation by running JSDoc3.
 
-[grunt-conventional-changelog](https://github.com/btford/grunt-conventional-changelog) - generating a changelog from Git metadata.
+[grunt-rev](https://github.com/cbas/grunt-rev) - static file asset revisioning through content hashing.
+
+[grunt-release](https://github.com/geddski/grunt-release) and [grunt-version](https://github.com/kswedberg/grunt-version) - allows to manage versions of a project.
+
+[grunt-conventional-changelog](https://github.com/btford/grunt-conventional-changelog) - generating a changelog from Git metadata. Also there are [grunt-bump](https://github.com/vojtajina/grunt-bump), which increments versions in package JSON and [grunt-dev-update](https://github.com/pgilad/grunt-dev-update), which automatically updates packages.
+
+[grunt-wiredep](https://github.com/stephenplusplus/grunt-wiredep) - inject Bower packages.
 
 [grunt-remove-logging](https://github.com/ehynds/grunt-remove-logging) - remove console logging statements.
 
 [grunt-proxy](https://github.com/tutukin/grunt-proxy) and [grunt-connect-proxy](https://github.com/drewzboto/grunt-connect-proxy) - connect support for proxying API calls during development.
-
-[node-matchdep](https://github.com/tkellen/node-matchdep) -  filter npm module dependencies.
 
 [grunt-phantomas](https://github.com/stefanjudis/grunt-phantomas) - measure frontend performance. 
 
 [grunt-preprocess](https://github.com/jsoverson/grunt-preprocess) - preprocess files based off environment configuration. 
 
 [time-grunt](https://github.com/sindresorhus/time-grunt) - displays the elapsed execution time of grunt tasks.
-
-[grunt-rev](https://github.com/cbas/grunt-rev) - useful plugin to work with versions.
-
-[grunt-wiredep](https://github.com/stephenplusplus/grunt-wiredep) - inject Bower packages.
-
-[grunt-dev-update](https://github.com/pgilad/grunt-dev-update) - automate the updating of your package.json packages.
 
 [load-grunt-config](https://github.com/firstandthird/load-grunt-config) - Grunt library that allows you to break up your Gruntfile config by task.
 
@@ -156,6 +154,9 @@ a {
 
 [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean) and [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) - respectively remove and copy sources. 
 
+[grunt-usebanner](https://github.com/mattstyles/grunt-banner) - adds a simple banner (copyright or ASCII headers) to source files and [grunt-figlet](https://github.com/patorjk/grunt-figlet) for help for it.
+
+[grunt-file-info](https://github.com/hansifer/grunt-file-info) - displays sizes and versions of files in a readable format.
 
 #Compilers
 * [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less) - LESS in CSS.
@@ -175,7 +176,8 @@ a {
 * [psi](https://github.com/addyosmani/psi) - PageSpeed Insights with reporting.
 * [tmi](https://github.com/addyosmani/tmi) -  TMI (Too Many Images) - discover your image weight on the web.
 * [ngrok](https://ngrok.com/) - Introspected tunnels to localhost.
-* [pageres](https://github.com/sindresorhus/pageres) - responsive website screenshots . 
+* [pageres](https://github.com/sindresorhus/pageres) - responsive website screenshots. 
+* [matchdep](https://github.com/tkellen/node-matchdep) -  filter npm module dependencies.
 * Maybe some automatization methods you want to use directly in the editor, so look at the [The Best Plugins for Sublime Text](http://ipestov.com/the-best-plugins-for-sublime-text/). 
 
 
