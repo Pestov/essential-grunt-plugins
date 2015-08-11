@@ -86,7 +86,7 @@ a {
 #Graphics
 [grunticon](https://github.com/filamentgroup/grunticon) - mystical CSS icon solution.
 
-[grunt-webfont](SVG to webfont converter) - SVG to webfont converter.
+[grunt-webfont](https://github.com/sapegin/grunt-webfont) - SVG to webfont converter.
 
 [grunt-responsive-images](https://github.com/andismith/grunt-responsive-images) - produce images at different sizes for responsive websites.
 
